@@ -67,9 +67,14 @@ namespace Estudo
                 }
                 if(ind > 0)
                 {
-                    listProd.Items.Add(string.Format("#{0} - {1} - {2}",codProd[ind], nomeProd[ind], valorProd[ind]));
+                    listProd.Items.Add(string.Format("#{0} - {1} - {2:C }",codProd[ind], nomeProd[ind], valorProd[ind]));
+                    picProd.ImageLocation = "C:/Users/jonat/Desktop/fotos sistema/" + codProd[ind] + ".jpg";
                     somaTotal += valorProd[ind];
-                    tbtotal.Text = Convert.ToString(somaTotal);
+                    tbtotal.Text = Convert.ToString("R$: " + somaTotal);
+
+                    tbcodigo.Text = "";
+                    tbcodigo.Focus();
+                   
                 }
                 else
                 {
@@ -77,6 +82,11 @@ namespace Estudo
                 }
             }
             
+        }
+
+        private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

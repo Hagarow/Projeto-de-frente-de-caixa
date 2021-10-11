@@ -30,7 +30,6 @@ namespace Estudo
                 nt = new Thread(novoForm);
                 nt.SetApartmentState(ApartmentState.STA);
                 nt.Start();
-                MessageBox.Show("Bem vindo!");
             }
             else
             {

@@ -68,10 +68,10 @@ namespace Estudo
             this.tbLogin.TabIndex = 3;
             this.tbLogin.TextChanged += new System.EventHandler(this.tbLogin_TextChanged);
             // 
-            // textBox2
+            // tbSenha
             // 
             this.tbSenha.Location = new System.Drawing.Point(133, 176);
-            this.tbSenha.Name = "textBox2";
+            this.tbSenha.Name = "tbSenha";
             this.tbSenha.Size = new System.Drawing.Size(150, 23);
             this.tbSenha.TabIndex = 4;
             this.tbSenha.TextChanged += new System.EventHandler(this.tbSenha_TextChanged);
@@ -79,12 +79,14 @@ namespace Estudo
             // Conectarbtn
             // 
             this.Conectarbtn.AutoEllipsis = true;
+            this.Conectarbtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Conectarbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Conectarbtn.Location = new System.Drawing.Point(153, 218);
             this.Conectarbtn.Name = "Conectarbtn";
             this.Conectarbtn.Size = new System.Drawing.Size(106, 37);
             this.Conectarbtn.TabIndex = 5;
             this.Conectarbtn.Text = "Conectar";
-            this.Conectarbtn.UseVisualStyleBackColor = true;
+            this.Conectarbtn.UseVisualStyleBackColor = false;
             this.Conectarbtn.Click += new System.EventHandler(this.Conectarbtn_Click);
             // 
             // pictureBox1
@@ -101,6 +103,7 @@ namespace Estudo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(426, 277);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Conectarbtn);
